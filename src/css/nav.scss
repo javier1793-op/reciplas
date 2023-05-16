@@ -37,6 +37,10 @@
     gap: 1.3rem;
 }
 .contentIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     color:  #aab7b8 ;
     font-size: 1.4rem;
     border-radius: 5px;
@@ -46,4 +50,20 @@
 .contentIcon.active{
     background: #566573;
     color: #fff;
+}
+
+.count{
+    display: flex;
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: -5px;
 }
