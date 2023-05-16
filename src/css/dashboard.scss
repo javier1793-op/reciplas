@@ -4,7 +4,23 @@
 }
 
 .containerDash{
-    display: flex;
-    width: 100%;
+    display: grid;
     height: 100vh;
+    grid-template-columns: 16rem repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    background:  #f4efd9 ;
 }
+aside { 
+    grid-area: 1 / 1 / 6 / 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 16rem;
+
+ }
+main { 
+    grid-area: 1 / 2 / 6 / 6;
+ } 
