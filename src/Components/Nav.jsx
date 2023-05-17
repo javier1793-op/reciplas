@@ -4,50 +4,56 @@ import ItemNav from "./ItemNav";
 import Notification from "./Notification";
 import User from "./User";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const [item, setItem] = useState("home");
 
-  const [item, setItem] = useState('home')
-
-  const changleClik=(e)=>{
-    setItem(e)
-  }
+  const changleClik = (e) => {
+    setItem(e);
+  };
 
   return (
     <div className="containerNav">
       <div className="contentNav">
         <div className="category">
           <div className="contentCategory">
-            <div className={`contentIcon ${item === 'home'?'active':''}`}
-            onClick={()=>changleClik('home')}
+            <div
+              className={`contentIcon ${item === "home" ? "active" : ""}`}
+              onClick={() => changleClik("home")}
             >
               <FiHome />
             </div>
-            <div className={`contentIcon ${item === 'notificacion'?'active':''}`}
-            onClick={()=>changleClik('notificacion')}
+            <div
+              className={`contentIcon ${
+                item === "notificacion" ? "active" : ""
+              }`}
+              onClick={() => changleClik("notificacion")}
             >
               <FiBell />
               <div className="count">2</div>
             </div>
-            <div className={`contentIcon ${item === 'user'?'active':''}`}
-            onClick={()=>changleClik('user')}
+            <div
+              className={`contentIcon ${item === "user" ? "active" : ""}`}
+              onClick={() => changleClik("user")}
             >
               <FiUser />
             </div>
           </div>
           <div className="footerNav">
-            <div className="contentIcon active ">
-            <FiLogOut/>
+            <Link to="/">
+              <div className="contentIcon active ">
+                <FiLogOut />
+              </div>
+
+              <span>Salir</span>
+            </Link>
           </div>
-            <span>Salir</span>
-          </div>
-          
         </div>
         <div className="subNav">
-          {item === 'home'&& <ItemNav/>}
-          {item === 'notificacion'&& <Notification/>}
-          {item === 'user'&& <User/>}
-          
+          {item === "home" && <ItemNav />}
+          {item === "notificacion" && <Notification />}
+          {item === "user" && <User />}
         </div>
       </div>
     </div>

@@ -108,3 +108,11 @@ button{
 .register p a:hover{
     text-decoration: underline;
 }
+.mensaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color:  #fff;
+    font-weight: 700;
+}
