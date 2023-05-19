@@ -2,6 +2,9 @@
 import Home from '../Components/Home'
 import Nav from '../Components/Nav'
 import '../css/dashboard.scss'
+import { Outlet } from "react-router";
+import Users from './Users';
+
 
 const Dashboard = () => {
   return (
@@ -11,7 +14,8 @@ const Dashboard = () => {
        <Nav/>
       </aside>
       <main>
-        <Home/>
+        <Users/>
+        <Outlet></Outlet>
       </main>
     </div>
     </>

@@ -12,6 +12,7 @@ const Home = () => {
       </div>
        
     <img src={Welcome} alt="welcome" />
+    lorem*30
     </div>
    </div>
   )

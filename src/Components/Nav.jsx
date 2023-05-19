@@ -46,8 +46,8 @@ const Nav = () => {
                 <FiLogOut />
               </div>
 
-              <span>Salir</span>
             </Link>
+              <span>Salir</span>
           </div>
         </div>
         <div className="subNav">
