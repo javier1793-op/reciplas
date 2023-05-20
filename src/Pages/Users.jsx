@@ -3,6 +3,9 @@ import { TfiIdBadge,TfiBarChartAlt ,TfiHarddrives,} from "react-icons/tfi";
 import { useState } from 'react';
 import Sectioncliente from '../Components/Sectioncliente';
 import Sectionproveedores from '../Components/Sectionproveedores';
+import Formcliente from '../Components/Formcliente';
+import Formproveedores from '../Components/Formproveedores';
+import SectionestadisticaUsuarios from '../Components/SectionestadisticaUsuarios';
 
 const Users = () => {
 
@@ -39,11 +42,14 @@ const Users = () => {
         >
           <TfiBarChartAlt className='iconGadget'/>
           <h4>Estadisticas</h4>
-          <p>Resumen Estidisticas sobre moviento de usuarios</p>
+          <p>Resumen Estidisticas graficos sobre clientes y proveedores</p>
         </div>
       </div>
-          {menu === 'clientes'&&<Sectioncliente/>}
-          {menu === 'proveedores'&&<Sectionproveedores/>}
+          {menu === 'clientes'&&<Sectioncliente setMenu={setMenu}/>}
+          {menu === 'proveedores'&&<Sectionproveedores setMenu={setMenu}/>}
+          {menu === 'addClient'&&<Formcliente setMenu={setMenu}/>}
+          {menu === 'addProveedor'&&<Formproveedores setMenu={setMenu}/>}
+          {menu === 'estadisticas'&& <SectionestadisticaUsuarios/>}
     </div>
    </div>
   )

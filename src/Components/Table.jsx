@@ -2,7 +2,7 @@ import '../css/table.scss'
 import { FiTrash,FiEye,FiEdit } from "react-icons/fi";
 import Swal from 'sweetalert2'
 
-const Table = () => {
+const Table = ({setMenu}) => {
 
 
   const Modalinfo=()=>{
@@ -10,18 +10,22 @@ const Table = () => {
       title: '<strong>Detalle Cliente <u>#</u></strong>',
       icon: 'info',
       html:
-        '<b>Nombre y Apellido: </b>, Ruiz Diaz Javier A. </br> ' +
-        '<b>DNI: </b>, 36957447 </br>' +
-        '<b>Direccion: </b>, Resistencia Chaco.</br> ' 
+        '<p align="left"><b>Nombre y Apellido: </b>, Ruiz Diaz Javier A. </br></br> ' +
+        '<b>Fecha de Nacimiento: </b>, 11 Marzo 1993 </br></br>' +
+        '<b>DNI: </b>, 36957447 </br></br>' +
+        '<b>Celular: </b>, 3704264610 </br></br>' +
+        '<b>Email: </b>, javier17utn@gmail.com</br></br> ' +
+        '<b>Provincia: </b>, Chaco 3500</br></br> '+ 
+        '<b>Dirección: </b>, Juan b Justo 760</br></br></p> ' 
         ,
       showCloseButton: true,
       showCancelButton: true,
       focusConfirm: false,
       confirmButtonText:
-        '<i class="fa fa-thumbs-up"></i> Great!',
+        'Genial!',
       confirmButtonAriaLabel: 'Thumbs up, great!',
       cancelButtonText:
-        '<i class="fa fa-thumbs-down"></i>',
+        'Cancelar',
       cancelButtonAriaLabel: 'Thumbs down'
     })
   }
@@ -45,6 +49,9 @@ const Table = () => {
   })
   }
 
+  const handleEdit=(e)=>{
+    setMenu(e)
+  }
 
 
   return (
@@ -69,7 +76,9 @@ const Table = () => {
                 <span
                 onClick={Modalinfo}
                 ><FiEye/> </span>
-                <span><FiEdit/> </span>
+                <span
+                onClick={()=>{handleEdit('addClient')}}
+                ><FiEdit/> </span>
                 <span
                 onClick={Modaldelete}
                 ><FiTrash/> </span>
@@ -84,8 +93,12 @@ const Table = () => {
           <td> <span className='activoTable'>Activo</span> </td>
           <td>
           <div className="buttonAction">
-                <span><FiEye/> </span>
-                <span><FiEdit/> </span>
+          <span
+                onClick={Modalinfo}
+                ><FiEye/> </span>
+                <span
+                onClick={()=>{handleEdit('addClient')}}
+                ><FiEdit/> </span>
                 <span
                 onClick={Modaldelete}
                 ><FiTrash/> </span>
@@ -100,8 +113,12 @@ const Table = () => {
           <td> <span className='activoTable'>Activo</span> </td>
           <td>
           <div className="buttonAction">
-                <span><FiEye/> </span>
-                <span><FiEdit/> </span>
+          <span
+                onClick={Modalinfo}
+                ><FiEye/> </span>
+                <span
+                onClick={()=>{handleEdit('addClient')}}
+                ><FiEdit/> </span>
                  <span
                 onClick={Modaldelete}
                 ><FiTrash/> </span>
@@ -116,8 +133,12 @@ const Table = () => {
           <td> <span className='activoTable'>Activo</span> </td>
           <td>
           <div className="buttonAction">
-                <span><FiEye/> </span>
-                <span><FiEdit/> </span>
+          <span
+                onClick={Modalinfo}
+                ><FiEye/> </span>
+                <span
+                onClick={()=>{handleEdit('addClient')}}
+                ><FiEdit/> </span>
                 <span
                 onClick={Modaldelete}
                 ><FiTrash/> </span>
@@ -132,8 +153,12 @@ const Table = () => {
           <td> <span className='activoTable'>Activo</span> </td>
           <td>
             <div className="buttonAction">
-                <span><FiEye/> </span>
-                <span><FiEdit/> </span>
+            <span
+                onClick={Modalinfo}
+                ><FiEye/> </span>
+                <span
+                onClick={()=>{handleEdit('addClient')}}
+                ><FiEdit/> </span>
                 <span
                 onClick={Modaldelete}
                 ><FiTrash/> </span>

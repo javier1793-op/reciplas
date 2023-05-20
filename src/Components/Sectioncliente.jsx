@@ -3,13 +3,21 @@ import Search from '../Components/Search';
 import Table from '../Components/Table';
 import Paginacion from '../Components/Paginacion';
 
-const Sectioncliente = () => {
+const Sectioncliente = ({setMenu}) => {
+  
+  const handleAdd=(e)=>{
+    setMenu(e)
+  }
+  
   return (
     <div className="sectionTable">
     <div className="viewTable">
       <div className="headTable">
         <h4> <FiCheckSquare/> Registro Clientes</h4>
-        <button className='addClient'>Agregar Cliente</button>
+        <button 
+        className='addClient'
+        onClick={()=>handleAdd('addClient')}
+        >Agregar Cliente</button>
       </div>
       
       <div className="bodyTable">
@@ -18,7 +26,7 @@ const Sectioncliente = () => {
           
         </div>
         
-          <Table/>
+          <Table setMenu={setMenu}/>
          <Paginacion/>
       </div>
     </div>
