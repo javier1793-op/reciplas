@@ -4,10 +4,10 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5percent from "@amcharts/amcharts5/percent";
 import  {  useLayoutEffect } from 'react';
 
-const EstadisticasUserGrafic = () => {
+const EstadisticasProveedor = () => {
     useLayoutEffect(() => {
     
-        let root = am5.Root.new("chartdiv");
+        let root = am5.Root.new("chartdiv2");
     
         root.setThemes([
             am5themes_Animated.new(root)
@@ -35,22 +35,15 @@ const EstadisticasUserGrafic = () => {
           
           // Set data
           series.data.setAll([{
-            category: "Mayores de 45",
+            category: "Grandes",
             value: 501.9
           }, {
-            category: "35 a 44",
+            category: "Medianas",
             value: 301.9
           }, {
-            category: "30 a 35",
+            category: "Micro-emprendimientos",
             value: 201.1
-          }, {
-          }, {
-            category: "29 a 25",
-            value: 201.1
-          }, {
-            category: "Menores de 24",
-            value: 165.8
-          }, ]);
+          },  ]);
           
           series.appear(1000, 100);
     
@@ -68,9 +61,8 @@ const EstadisticasUserGrafic = () => {
     
       return (
         
-        <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+        <div id="chartdiv2" style={{ width: "100%", height: "500px" }}></div>
       );
-    }
+}
 
-
-export default EstadisticasUserGrafic
+export default EstadisticasProveedor

@@ -1,6 +1,7 @@
 import { FiPieChart} from "react-icons/fi";
 import '../css/sectionestadisticasuser.scss'
 import EstadisticasUserGrafic from "./Estadisticas/EstadisticasUserGrafic";
+import EstadisticasProveedor from "./Estadisticas/EstadisticasProveedor";
 
 
 const SectionestadisticaUsuarios = () => {
@@ -16,6 +17,10 @@ const SectionestadisticaUsuarios = () => {
         <div className="edadusuarios">
             <h4>Porcentaje de Edades de usuarios registrados</h4>
             <EstadisticasUserGrafic/>
+        </div>
+        <div className="edadusuarios">
+            <h4>Porcentaje de Tipos de Empresas</h4>
+            <EstadisticasProveedor/>
         </div>
         
       </div>
