@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Users from "./Pages/Users";
 import Sales from "./Pages/Sales";
 import { BrowserRouter } from 'react-router-dom'
+import Factura from "./Pages/Factura";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/home" element={<Dashboard />} />
               <Route path="/usuarios" element={<Users />} />
               <Route path="/ventas" element={<Sales />} />
+              <Route path="/factura" element={<Factura />} />
             <Route />
        
       </Routes>

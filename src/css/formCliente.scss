@@ -70,3 +70,15 @@ input[type=number] { -moz-appearance:textfield; }
     gap: .5rem;
     
   }
+  .tableForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableForm tr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

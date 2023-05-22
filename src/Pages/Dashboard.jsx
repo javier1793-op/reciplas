@@ -4,6 +4,7 @@ import Nav from '../Components/Nav'
 import '../css/dashboard.scss'
 import { Outlet } from "react-router";
 import Users from './Users';
+import Sales from './Sales';
 
 
 const Dashboard = () => {
@@ -14,7 +15,7 @@ const Dashboard = () => {
        <Nav/>
       </aside>
       <main>
-        <Users/>
+        <Sales/>
         <Outlet></Outlet>
       </main>
     </div>
