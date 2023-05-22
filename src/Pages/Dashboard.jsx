@@ -6,6 +6,7 @@ import { Outlet } from "react-router";
 import Users from './Users';
 import Sales from './Sales';
 import Shopping from './Shopping';
+import Production from './Production';
 
 
 const Dashboard = () => {
@@ -16,7 +17,7 @@ const Dashboard = () => {
        <Nav/>
       </aside>
       <main>
-        <Shopping/>
+        <Production/>
         <Outlet></Outlet>
       </main>
     </div>

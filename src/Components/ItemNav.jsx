@@ -46,7 +46,7 @@ const ItemNav = () => {
             className={item === 'productos'?'active':''}
             >
             <FiClipboard/>
-            Productos</li>
+            Producción</li>
             <li
             onClick={()=>handleChange('estadisticas')}
             className={item === 'estadisticas'?'active':''}
