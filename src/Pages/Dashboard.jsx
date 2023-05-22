@@ -5,6 +5,7 @@ import '../css/dashboard.scss'
 import { Outlet } from "react-router";
 import Users from './Users';
 import Sales from './Sales';
+import Shopping from './Shopping';
 
 
 const Dashboard = () => {
@@ -15,7 +16,7 @@ const Dashboard = () => {
        <Nav/>
       </aside>
       <main>
-        <Sales/>
+        <Shopping/>
         <Outlet></Outlet>
       </main>
     </div>
