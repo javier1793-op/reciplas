@@ -75,6 +75,7 @@ input[type=number] { -moz-appearance:textfield; }
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .tableForm tr{
   display: flex;

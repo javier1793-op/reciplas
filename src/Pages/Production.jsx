@@ -2,6 +2,8 @@ import { TfiArchive,TfiBarChartAlt } from "react-icons/tfi";
 import { useState } from 'react';
 import Seccionproduccion from "../Components/Produccion/Seccionproduccion";
 import Formulariomercaderia from "../Components/Produccion/Formulariomercaderia";
+import Formularioproducto from "../Components/Produccion/Formularioproducto";
+import Seccionestadisticaproduccion from '../Components/Produccion/Seccionestadisticaproduccion'
 
 const Production = () => {
 
@@ -37,6 +39,8 @@ const Production = () => {
       </div>
           {menuproduccion === 'stock'&&<Seccionproduccion setMenuproduccion={setMenuproduccion} />}
           {menuproduccion === 'addMercaderia'&&<Formulariomercaderia setMenuproduccion={setMenuproduccion} />}
+          {menuproduccion === 'addProducto'&&<Formularioproducto setMenuproduccion={setMenuproduccion} />}
+          {menuproduccion === 'estadisticas'&&<Seccionestadisticaproduccion />}
     </div>
    </div>
   )
