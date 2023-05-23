@@ -11,7 +11,7 @@ const Gadget = () => {
                 <span className='cantidadgadget'> 50</span>
                </div>
                <div className="detallegad">
-                Mercaderia mensual
+                Insumos Total
                </div>
             </div>
             <div className="gadgetproduccion">
@@ -21,7 +21,7 @@ const Gadget = () => {
               
                </div>
                <div className="detallegad">
-                Producción del Mes
+                Producción Total
                </div>
             </div>
             <div className="gadgetproduccion">
