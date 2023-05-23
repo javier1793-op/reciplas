@@ -20,7 +20,7 @@ const ReporteDeudores = () => {
           Imprimir
         </button>
       </div>
-
+      <h4>Deudores</h4>
       <table className="GeneratedTable">
         <thead>
           <tr>

@@ -57,15 +57,16 @@ const Table = ({setMenu}) => {
   return (
    <>
     <table>
-      <thead>
-        <tr>
+      
+       
+ 
+      <tbody>
+      <tr>
           <th>Apellido y Nombre</th>
           <th>DNI</th>
           <th>Estado</th>
           <th>Acción</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
          
           <td>Ruiz Diaz Javier</td>

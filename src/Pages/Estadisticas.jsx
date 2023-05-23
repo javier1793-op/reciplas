@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "../css/estadisticas.scss";
 import ReporteDeudores from "../Components/Reportes/ReporteDeudores";
+import ReporteProveedores from "../Components/Reportes/ReporteProveedores";
+import Reportepedidos from "../Components/Reportes/Reportepedidos";
+import ReporteStock from "../Components/Reportes/ReporteStock";
 
 const Estadisticas = () => {
   const [value, setValue] = useState("");
@@ -64,7 +67,7 @@ const Estadisticas = () => {
                 >
                   <option value="">Seleccione el modulo</option>
                   <option value="deudores">Deudores</option>
-                  <option value="proveedores">Proveedores</option>
+                  <option value="proveedores">Proveedores - ultimos movimiento</option>
                   <option value="pedidos">Pedidos</option>
                   <option value="stock">Stock</option>
                   <option value="producidos">Producidos</option>
@@ -85,6 +88,9 @@ const Estadisticas = () => {
           </div>
         </div>
             {generar === 'deudores'&&<ReporteDeudores/>}
+            {generar === 'proveedores'&&<ReporteProveedores/>}
+            {generar === 'pedidos'&&<Reportepedidos/>}
+            {generar === 'stock'&&<ReporteStock/>}
       </div>
 
     </div>
