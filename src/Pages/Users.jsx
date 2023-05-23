@@ -28,21 +28,21 @@ const Users = () => {
         >
           <TfiIdBadge className='iconGadget'/>
           <h4>Clientes</h4>
-          <p>Registracción/Acción</p>
+          <p>Registración/Acción</p>
         </div>
         <div className={`contentGadget ${menu ==='proveedores'?'active':''}`}
           onClick={()=>handleMenu('proveedores')}
         >
           <TfiHarddrives className='iconGadget'/>
           <h4>Proveedores</h4>
-          <p>Registracción/Acción</p>
+          <p>Registración/Acción</p>
         </div>
         <div className={`contentGadget ${menu ==='estadisticas'?'active':''}`}
           onClick={()=>handleMenu('estadisticas')}
         >
           <TfiBarChartAlt className='iconGadget'/>
           <h4>Estadisticas</h4>
-          <p>Resumen Estidisticas graficos sobre clientes y proveedores</p>
+          <p>Resumen Estidísticas gráficos sobre clientes y proveedores</p>
         </div>
       </div>
           {menu === 'clientes'&&<Sectioncliente setMenu={setMenu}/>}

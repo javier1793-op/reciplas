@@ -26,15 +26,15 @@ const Production = () => {
         >
           <TfiArchive className='iconGadget'/>
           <h4>Stock</h4>
-          <p>Registracción de Mercaderia / Producidos</p>
+          <p>Registración de Mercaderia / Producidos</p>
         </div>
        
         <div className={`contentGadget ${menuproduccion ==='estadisticas'?'active':''}`}
           onClick={()=>handleMenu('estadisticas')}
         >
           <TfiBarChartAlt className='iconGadget'/>
-          <h4>Estadisticas</h4>
-          <p>Resumen Estidisticas graficos sobre stock</p>
+          <h4>Estadísticas</h4>
+          <p>Resumen Estidísticas gráficos sobre stock</p>
         </div>
       </div>
           {menuproduccion === 'stock'&&<Seccionproduccion setMenuproduccion={setMenuproduccion} />}

@@ -24,15 +24,15 @@ const Shopping = () => {
         >
           <TfiAgenda className='iconGadget'/>
           <h4>Registros</h4>
-          <p>Registracción de las compras realizadas</p>
+          <p>Registración de las compras realizadas</p>
         </div>
       
         <div className={`contentGadget ${menucompras ==='estadisticas'?'active':''}`}
           onClick={()=>handleMenu('estadisticas')}
         >
           <TfiBarChartAlt className='iconGadget'/>
-          <h4>Estadisticas</h4>
-          <p>Resumen Estidisticas graficos sobre compras</p>
+          <h4>Estadísticas</h4>
+          <p>Resumen Estidísticas gráficos sobre compras</p>
         </div>
       </div>
     
