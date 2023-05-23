@@ -14,7 +14,7 @@ const handleSubmit=(e)=>{
         setVerficicacion(!verficicacion)
         return
     }else{
-        return location.replace('/home')
+        return location.replace('dashboard/home')
     }
 
 }

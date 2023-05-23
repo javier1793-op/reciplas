@@ -2,11 +2,7 @@
 import Home from '../Components/Home'
 import Nav from '../Components/Nav'
 import '../css/dashboard.scss'
-import { Outlet } from "react-router";
-import Users from './Users';
-import Sales from './Sales';
-import Shopping from './Shopping';
-import Production from './Production';
+import { Outlet } from 'react-router-dom';
 
 
 const Dashboard = () => {
@@ -17,8 +13,8 @@ const Dashboard = () => {
        <Nav/>
       </aside>
       <main>
-        <Production/>
-        <Outlet></Outlet>
+       
+        <Outlet/>
       </main>
     </div>
     </>

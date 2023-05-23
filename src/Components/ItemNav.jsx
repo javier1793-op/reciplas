@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../css/itemNav.scss'
 import { FiUsers,FiShoppingCart,FiTruck,FiClipboard,FiBarChart2 } from "react-icons/fi";
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const ItemNav = () => {
 
@@ -18,41 +18,47 @@ const ItemNav = () => {
             <span>business system</span>
         </section>
         <ul>
-            <Link to='/usuarios' className='link'>
+            <NavLink to='usuarios' className='link'>
               <li
               onClick={()=>handleChange('usarios')}
               className={item === 'usarios'?'active':''}
               >
               <FiUsers/>
               Usuarios</li>
-            </Link>
+            </NavLink>
             
-            <Link to='/ventas' className='link'>
+            <NavLink to='ventas' className='link'>
             <li
             onClick={()=>handleChange('ventas')}
             className={item === 'ventas'?'active':''}
             >
             <FiShoppingCart/>
             Ventas</li>
-            </Link>
+            </NavLink>
+            <NavLink to='compras' className='link'>
             <li
             onClick={()=>handleChange('compras')}
             className={item === 'compras'?'active':''}
             >
             <FiTruck/>    
             Compras</li>
+            </NavLink>
+            <NavLink to='productos' className='link'>
             <li
             onClick={()=>handleChange('productos')}
             className={item === 'productos'?'active':''}
             >
             <FiClipboard/>
             Producción</li>
+            </NavLink>
+            <NavLink to='estadisticas' className='link'>
             <li
             onClick={()=>handleChange('estadisticas')}
             className={item === 'estadisticas'?'active':''}
             >
             <FiBarChart2/>
             Estadísticas</li>
+            </NavLink>
         </ul>
 
       

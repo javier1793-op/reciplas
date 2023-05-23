@@ -18,12 +18,14 @@ const Nav = () => {
       <div className="contentNav">
         <div className="category">
           <div className="contentCategory">
+          <Link to="/dashboard/home">
             <div
               className={`contentIcon ${item === "home" ? "active" : ""}`}
               onClick={() => changleClik("home")}
             >
               <FiHome />
             </div>
+            </Link>
             <div
               className={`contentIcon ${
                 item === "notificacion" ? "active" : ""
