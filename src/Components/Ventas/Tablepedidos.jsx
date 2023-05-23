@@ -2,7 +2,7 @@
 import { FiTrash,FiEye,FiEdit } from "react-icons/fi";
 import Swal from 'sweetalert2'
 
-const Tablepedidos = ({setMenuventas}) => {
+const Tablepedidos = ({setSubmenu}) => {
     const Modalinfo=()=>{
         Swal.fire({
           title: '<strong>Detalle del Pedido <u>#</u></strong>',
@@ -49,7 +49,7 @@ const Tablepedidos = ({setMenuventas}) => {
       }
     
       const handleEdit=(e)=>{
-        setMenuventas(e)
+        setSubmenu(e)
       }
     
     
@@ -76,7 +76,7 @@ const Tablepedidos = ({setMenuventas}) => {
                     onClick={Modalinfo}
                     ><FiEye/> </span>
                     <span
-                    onClick={()=>{handleEdit('addClient')}}
+                    onClick={()=>{handleEdit('addpedido')}}
                     ><FiEdit/> </span>
                     <span
                     onClick={Modaldelete}
@@ -96,7 +96,7 @@ const Tablepedidos = ({setMenuventas}) => {
                     onClick={Modalinfo}
                     ><FiEye/> </span>
                     <span
-                    onClick={()=>{handleEdit('addClient')}}
+                    onClick={()=>{handleEdit('addpedido')}}
                     ><FiEdit/> </span>
                     <span
                     onClick={Modaldelete}
@@ -116,7 +116,7 @@ const Tablepedidos = ({setMenuventas}) => {
                    onClick={Modalinfo}
                    ><FiEye/> </span>
                    <span
-                   onClick={()=>{handleEdit('addClient')}}
+                   onClick={()=>{handleEdit('addpedido')}}
                    ><FiEdit/> </span>
                    <span
                    onClick={Modaldelete}
@@ -136,7 +136,7 @@ const Tablepedidos = ({setMenuventas}) => {
                    onClick={Modalinfo}
                    ><FiEye/> </span>
                    <span
-                   onClick={()=>{handleEdit('addClient')}}
+                   onClick={()=>{handleEdit('addpedido')}}
                    ><FiEdit/> </span>
                    <span
                    onClick={Modaldelete}
@@ -156,7 +156,7 @@ const Tablepedidos = ({setMenuventas}) => {
                    onClick={Modalinfo}
                    ><FiEye/> </span>
                    <span
-                   onClick={()=>{handleEdit('addClient')}}
+                   onClick={()=>{handleEdit('addpedido')}}
                    ><FiEdit/> </span>
                    <span
                    onClick={Modaldelete}

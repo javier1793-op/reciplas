@@ -32,7 +32,7 @@ const Registropedidos = ({setSubmenu}) => {
               
             </div>
             
-           <Tablepedidos />
+           <Tablepedidos setSubmenu={setSubmenu}/>
              
             
              <Paginacion/>

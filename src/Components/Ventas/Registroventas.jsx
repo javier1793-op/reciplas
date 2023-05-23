@@ -3,7 +3,7 @@ import Search from "../Search"
 import { FiCheckSquare } from "react-icons/fi";
 import Tableventas from "./Tableventas";
 
-const Registroventas = () => {
+const Registroventas = ({setSubmenu}) => {
   return (
     <div className="sectionTable">
     <div className="viewTable">
@@ -20,7 +20,7 @@ const Registroventas = () => {
           
         </div>
         
-       <Tableventas />
+       <Tableventas setSubmenu={setSubmenu}/>
          
         
          <Paginacion/>
