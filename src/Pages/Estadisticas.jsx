@@ -4,6 +4,9 @@ import ReporteDeudores from "../Components/Reportes/ReporteDeudores";
 import ReporteProveedores from "../Components/Reportes/ReporteProveedores";
 import Reportepedidos from "../Components/Reportes/Reportepedidos";
 import ReporteStock from "../Components/Reportes/ReporteStock";
+import ReporteProducidos from "../Components/Reportes/ReporteProducidos";
+import ReporteCompras from "../Components/Reportes/ReporteCompras";
+import ReporteVentas from "../Components/Reportes/ReporteVentas";
 
 const Estadisticas = () => {
   const [value, setValue] = useState("");
@@ -14,6 +17,8 @@ const Estadisticas = () => {
 
     setGenerar(value)
   };
+
+  
 
   return (
     <div className="containerUser">
@@ -91,6 +96,9 @@ const Estadisticas = () => {
             {generar === 'proveedores'&&<ReporteProveedores/>}
             {generar === 'pedidos'&&<Reportepedidos/>}
             {generar === 'stock'&&<ReporteStock/>}
+            {generar === 'producidos'&&<ReporteProducidos/>}
+            {generar === 'compras'&&<ReporteCompras/>}
+            {generar === 'ventas'&&<ReporteVentas/>}
       </div>
 
     </div>

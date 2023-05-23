@@ -3,14 +3,7 @@ import Graficoproveedores from "./Graficoproveedores";
 
 const ReporteProveedores = () => {
   const handlePrint = () => {
-    var printContents = document.getElementById("imp1").innerHTML;
-    const w = window.open();
-    w.document.write(printContents);
-    w.document.close();
-    w.focus();
-    w.print();
-    w.close();
-    return true;
+    return window.print()
   };
 
   return (

@@ -139,10 +139,26 @@ const Formpedido = ({ setSubmenu }) => {
                       type="number"
                     />
                   </td>
+                  <td>
+                    <label className="form-label" htmlFor="email">
+                      SubTotal:
+                    </label>
+                    <label className="form-label" htmlFor="email">
+                      $500
+                    </label>
+                  </td>
                 </tr>
                 <tr>
                   <button className="form-button">Agregar +</button>
                 </tr>
+                <td>
+                    <label className="form-label" htmlFor="email">
+                      Total:
+                    </label>
+                    <label className="form-label" htmlFor="email">
+                     <span className="totalcompra">$500</span>
+                    </label>
+                  </td>
               </table>
             </div>
             <button className="form-button" type="submit">

@@ -2,16 +2,9 @@ import Graficopedidos from "./Graficopedidos";
 
 
 const Reportepedidos = () => {
-    const handlePrint = () => {
-        var printContents = document.getElementById("imp1").innerHTML;
-        const w = window.open();
-        w.document.write(printContents);
-        w.document.close();
-        w.focus();
-        w.print();
-        w.close();
-        return true;
-      };
+  const handlePrint = () => {
+    return window.print()
+  };
     
       return (
         <div className="containerReporte" id="imp1">

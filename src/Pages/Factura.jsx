@@ -9,6 +9,7 @@ const Factura = () => {
     const handlevolver=()=>{
         return location.replace('/home')
     }
+    
 
   return (
     <>
@@ -114,6 +115,13 @@ const Factura = () => {
         >
               volver
             </button>
+               <button className="form-button" >
+            <a href="mailto:reciplas@gmail.com" className="mailbtn">
+
+              Enviar a Email
+            </a>
+            </button>
+       
         </div>
       </div>
     </>
