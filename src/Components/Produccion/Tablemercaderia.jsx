@@ -26,7 +26,7 @@ const Tablemercaderia = ({setMenuproduccion}) => {
 
   const Modaldelete = () => {
     Swal.fire({
-      title: "¿Esta seguro de Eliminar la Mercaderia?",
+      title: "¿Esta seguro de Eliminar la Insumo?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -48,7 +48,7 @@ const Tablemercaderia = ({setMenuproduccion}) => {
       <table>
         <thead>
           <tr>
-            <th>Producto</th>
+            <th>Insumo</th>
             <th>Proveedor</th>
             <th>Fecha de compra</th>
             <th>Acción</th>

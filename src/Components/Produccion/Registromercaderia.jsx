@@ -8,11 +8,11 @@ const Registromercaderia = ({setMenuproduccion}) => {
     <div className="sectionTable">
     <div className="viewTable">
       <div className="headTable">
-        <h4> <FiCheckSquare/> Registro Mercaderia</h4>
+        <h4> <FiCheckSquare/> Registro Insumos</h4>
         <button 
         className='addClient'
         onClick={()=>setMenuproduccion('addMercaderia')}
-        >Registrar Mercaderia</button>
+        >Registrar Insumos</button>
         </div>
         
      

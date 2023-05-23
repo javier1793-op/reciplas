@@ -16,7 +16,7 @@ const Sales = () => {
     <div className="containerUser">
     <div className="contentUser">
       <div className="headUsers">
-        <h2>Modulo Ventas</h2>
+        <h2> Ventas</h2>
       <span> <span className='history'>Home</span> / Ventas</span>
       </div>
       <div className="gadgetUsers">
@@ -25,7 +25,7 @@ const Sales = () => {
         >
           <TfiAgenda className='iconGadget'/>
           <h4>Registros</h4>
-          <p>Registracción de ventas y pedidos</p>
+          <p>Registración de ventas y pedidos</p>
         </div>
         <div className={`contentGadget ${menuventas ==='facturacion'?'active':''}`}
           onClick={()=>handleMenu('facturacion')}
@@ -38,8 +38,8 @@ const Sales = () => {
           onClick={()=>handleMenu('estadisticas')}
         >
           <TfiBarChartAlt className='iconGadget'/>
-          <h4>Estadisticas</h4>
-          <p>Resumen Estidisticas graficos sobre ventas</p>
+          <h4>Estadísticas</h4>
+          <p>Resumen / Estidisticas / Gráficos sobre ventas</p>
         </div>
       </div>
     

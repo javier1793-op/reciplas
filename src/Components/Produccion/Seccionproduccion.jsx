@@ -18,7 +18,7 @@ const Seccionproduccion = ({ setMenuproduccion }) => {
             className={submenu === "mercaderia" ? "active" : ""}
             onClick={() => setSubmenu("mercaderia")}
           >
-            Registro de Mercaderia
+            Registro de Insumos
           </li>
           <li
             className={submenu === "producido" ? "active" : ""}

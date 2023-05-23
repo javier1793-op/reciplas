@@ -15,7 +15,7 @@ const Shopping = () => {
     <div className="containerUser">
     <div className="contentUser">
       <div className="headUsers">
-        <h2>Modulo Compras</h2>
+        <h2> Compras</h2>
       <span> <span className='history'>Home</span> / Compras</span>
       </div>
       <div className="gadgetUsers">
@@ -32,7 +32,7 @@ const Shopping = () => {
         >
           <TfiBarChartAlt className='iconGadget'/>
           <h4>Estadísticas</h4>
-          <p>Resumen Estidísticas gráficos sobre compras</p>
+          <p>Resumen / Estidísticas / Gráficos sobre compras</p>
         </div>
       </div>
     

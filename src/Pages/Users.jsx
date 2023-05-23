@@ -19,7 +19,7 @@ const Users = () => {
     <div className="containerUser">
     <div className="contentUser">
       <div className="headUsers">
-        <h2>Modulo Usuarios</h2>
+        <h2> Usuarios</h2>
       <span> <span className='history'>Home</span> / Usuarios</span>
       </div>
       <div className="gadgetUsers">
@@ -41,8 +41,8 @@ const Users = () => {
           onClick={()=>handleMenu('estadisticas')}
         >
           <TfiBarChartAlt className='iconGadget'/>
-          <h4>Estadisticas</h4>
-          <p>Resumen Estidísticas gráficos sobre clientes y proveedores</p>
+          <h4>Estadísticas</h4>
+          <p>Resumen / Estidísticas / Gráficos  clientes proveedores</p>
         </div>
       </div>
           {menu === 'clientes'&&<Sectioncliente setMenu={setMenu}/>}

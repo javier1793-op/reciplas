@@ -24,7 +24,7 @@ const Estadisticas = () => {
     <div className="containerUser">
       <div className="contentUser">
         <div className="headUsers">
-          <h2>Modulo Estadísticas</h2>
+          <h2> Estadísticas</h2>
           <span>
             {" "}
             <span className="history">Home</span> / Estadísticas
@@ -60,7 +60,7 @@ const Estadisticas = () => {
               </div>
               <div className="form-group">
                 <label className="form-label" htmlFor="name">
-                  *Modulo:
+                  *Módulo:
                 </label>
                 <select
                   name="pets"
@@ -70,7 +70,7 @@ const Estadisticas = () => {
                   onChange={() => setValue(event.target.value)}
                   required
                 >
-                  <option value="">Seleccione el modulo</option>
+                  <option value="">Seleccione el módulo</option>
                   <option value="deudores">Deudores</option>
                   <option value="proveedores">Proveedores - ultimos movimiento</option>
                   <option value="pedidos">Pedidos</option>
@@ -85,7 +85,7 @@ const Estadisticas = () => {
               </div>
               <div className="form-group">
                 <span>
-                  *Si no selecciona un periodo se mostrara todo hasta el dia de
+                  *Si no selecciona un periodo se mostrará todo hasta el dia de
                   la fecha
                 </span>
               </div>
