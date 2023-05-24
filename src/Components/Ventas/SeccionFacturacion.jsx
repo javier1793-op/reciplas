@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const SeccionFacturacion = () => {
 
     const handleLink=()=>{
-        return location.replace('/factura')
+        return location.replace('/reciplas/factura')
     }
 
     const handlegenerar = (e) => {

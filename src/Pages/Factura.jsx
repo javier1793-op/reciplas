@@ -7,7 +7,7 @@ const Factura = () => {
     }
 
     const handlevolver=()=>{
-        return location.replace('dashboard/ventas')
+        return location.replace('/reciplas/dashboard/ventas')
     }
     
 

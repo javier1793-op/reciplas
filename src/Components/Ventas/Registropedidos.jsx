@@ -7,7 +7,10 @@ import Tablepedidos from './Tablepedidos'
 const Registropedidos = ({setSubmenu}) => {
 
 
-    const handleCliente = () => {};
+    const handleCliente = () => {
+
+      return location.replace('/reciplas/dashboard/usuarios')
+    };
   return (
     <div className="sectionTable">
         <div className="viewTable">

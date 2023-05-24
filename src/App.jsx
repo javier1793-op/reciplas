@@ -13,15 +13,15 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/reciplas/",
       element: <Login />,
     },
     {
-      path: "/factura",
+      path: "reciplas/factura",
       element: <Factura />,
     },
     {
-      path: "/dashboard",
+      path: "reciplas/dashboard",
       element: <Dashboard />,
       children: [
         {
