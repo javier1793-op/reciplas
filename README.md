@@ -1,9 +1,18 @@
 ## Screenshot
 ![Design preview ](./src/img/reciplas.png)
 
-### Links
+### Guia de instalación
 
-- Solution URL: [Page](/)
+- Descargar repositorio completo
+- Abrilo con un editor (Visual Studio Code)
+- ejecutar los siguiente comandos:
+- npm i
+- npm i sass
+- npm run dev
+- colocar la direccion que brinda la consola en un navegador web.
+- Datos para loguearse:
+- usuario: admin@gmail.com
+- contraseña: admin
 
 
 ### Built with
