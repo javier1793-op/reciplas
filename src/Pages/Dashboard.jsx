@@ -1,10 +1,13 @@
 
+
 import Nav from '../Components/Nav'
 import '../css/dashboard.scss'
 import { Outlet } from 'react-router-dom';
 
 
 const Dashboard = () => {
+
+
   return (
     <>
     <div className="containerDash">
@@ -13,7 +16,7 @@ const Dashboard = () => {
       </aside>
       <main>
        
-        <Outlet/>
+        <Outlet />
       </main>
     </div>
     </>

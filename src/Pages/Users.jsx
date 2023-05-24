@@ -6,6 +6,7 @@ import Sectionproveedores from '../Components/Sectionproveedores';
 import Formcliente from '../Components/Formcliente';
 import Formproveedores from '../Components/Formproveedores';
 import SectionestadisticaUsuarios from '../Components/SectionestadisticaUsuarios';
+import { GrMenu } from "react-icons/gr";
 
 const Users = () => {
 
@@ -15,10 +16,14 @@ const Users = () => {
     setMenu(e)
   }
 
+
   return (
     <div className="containerUser">
     <div className="contentUser">
       <div className="headUsers">
+        <GrMenu className={`menu`}
+      
+        />
         <h2> Usuarios</h2>
       <span> <span className='history'>Home</span> / Usuarios</span>
       </div>

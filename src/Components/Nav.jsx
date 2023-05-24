@@ -18,7 +18,7 @@ const Nav = () => {
       <div className="contentNav">
         <div className="category">
           <div className="contentCategory">
-          <Link to="/dashboard/home">
+          <Link to="home">
             <div
               className={`contentIcon ${item === "home" ? "active" : ""}`}
               onClick={() => changleClik("home")}
@@ -43,7 +43,7 @@ const Nav = () => {
             </div>
           </div>
           <div className="footerNav">
-            <Link to="/">
+            <Link to="/reciplas">
               <div className="contentIcon active ">
                 <FiLogOut />
               </div>

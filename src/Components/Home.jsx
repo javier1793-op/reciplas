@@ -8,7 +8,7 @@ const Home = () => {
     <div className="contentHome">
       <div className="welcome">
         <h1>Hola!</h1>
-        <h2>Bienvenido <span>Javier</span><RiHandHeartLine/></h2>
+        <h2>Bienvenido <span>Usuario</span><RiHandHeartLine/></h2>
       </div>
        
     <img src={Welcome} alt="welcome" />

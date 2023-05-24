@@ -4,11 +4,11 @@ import Swal from "sweetalert2";
 const Tablemercaderia = ({setMenuproduccion}) => {
   const Modalinfo = () => {
     Swal.fire({
-      title: "<strong>Detalle de la Mercaderia <u>#</u></strong>",
+      title: "<strong>Detalle del Insumo <u>#</u></strong>",
       icon: "info",
       html:
         '<p align="left"><b>N° de Factura: </b>, 0035 </br></br> ' +
-        "<b>Mercaderia: </b>, Mercaderia 1 </br></br>" +
+        "<b>Insumo: </b>, Insumo 1 </br></br>" +
         "<b>Fecha de Compra: </b>, 01-08-23 </br></br>" +
         "<b>Peso: </b>, 10kg </br></br>" +
         "<b>Cantidad: </b>, 5 </br></br>" +
@@ -26,7 +26,7 @@ const Tablemercaderia = ({setMenuproduccion}) => {
 
   const Modaldelete = () => {
     Swal.fire({
-      title: "¿Esta seguro de Eliminar la Insumo?",
+      title: "¿Esta seguro de eliminar este registro de compra de insumo?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

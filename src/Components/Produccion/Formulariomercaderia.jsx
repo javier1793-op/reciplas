@@ -2,6 +2,16 @@ import { FiBook } from "react-icons/fi";
 import Swal from "sweetalert2";
 
 const Formulariomercaderia = ({setMenuproduccion}) => {
+
+
+  const handleproveedor=()=>{
+    return location.replace('usuarios')
+  }
+
+  const handleproducto=()=>{
+    return location.replace('compras')
+  }
+
   const handleAdd = (e) => {
     setMenuproduccion(e);
   };
@@ -79,7 +89,9 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
                   </select>
                 </div>
                 <div className="form-group">
-                <button className="form-button" >
+                <button className="form-button"
+                  onClick={handleproducto}
+                >
              Añadir +
             </button>
             </div>
@@ -89,7 +101,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
               </label>
               <input
                 required
-                placeholder="Ingres el nombre del proveedor"
+                placeholder="Ingres el peso estimado"
                 className="form-input"
                 name="date"
                 id="date"
@@ -140,7 +152,9 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
                   </select>
                 </div>
                 <div className="form-group">
-                <button className="form-button" >
+                <button className="form-button"
+                onClick={handleproveedor}
+                >
              Añadir +
             </button>
             </div>

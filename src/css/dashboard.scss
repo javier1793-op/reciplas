@@ -22,7 +22,28 @@ aside {
     width: 16rem;
 
  }
+
 main { 
     grid-area: 1 / 2 / 6 / 6;
     height: 100%;
- } 
+ }
+ 
+ .menu{
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+ }
+@media (max-width:900px){
+    aside{
+        display: none;
+    }
+    main{
+        grid-area: 1 / 1 / 6 / 6;
+    }
+    .menu{
+        display: flex;
+    }
+}

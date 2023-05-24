@@ -32,7 +32,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
             <div className="headTable">
               <h4>
                 {" "}
-                <FiBook /> Formularo de Registro de Productos
+                <FiBook /> Formularo de Registro de Producción
               </h4>
               <button className="addClient" onClick={() => handleAdd("stock")}>
                 Volver a Registro
@@ -71,7 +71,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
                     
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Limite de Producción:
+                    *Cantidad de Producción:
                   </label>
                   <input
                     required
