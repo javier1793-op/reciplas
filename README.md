@@ -1,9 +1,18 @@
-## Screenshot
+## System Reciplas by Grupo 9
 ![Design preview ](./src/img/reciplas.png)
 
-### Links
+### Guia de instalación
 
-- Solution URL: [Page](/)
+- Descargar repositorio completo
+- Abrir con un editor de codigos fuente (De preferencia Visual Studio Code)
+- Ejecutar los siguiente comandos:
+    - npm i
+    - npm i sass
+    - npm run dev
+- Colocar la direccion que brinda la consola en un navegador web.
+- Datos para loguearse:
+    - usuario: admin@gmail.com
+    - contraseña: admin
 
 
 ### Built with
