@@ -1,4 +1,4 @@
-## Screenshot
+## Reciplas
 ![Design preview ](./src/img/reciplas.png)
 
 ### Guia de instalación
