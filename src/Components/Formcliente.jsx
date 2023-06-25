@@ -35,7 +35,7 @@ const Formcliente = ({ setMenu }) => {
             {" "}
             <FiUserPlus /> Formularo de Cliente
           </h4>
-          <button className="addClient" onClick={() => handleAdd("clientes")}>
+          <button className="form-button" onClick={() => handleAdd("clientes")}>
             Volver a Registro
           </button>
         </div>
@@ -44,7 +44,7 @@ const Formcliente = ({ setMenu }) => {
           <form className="colorful-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="form-label" htmlFor="name">
-                *Apellido:
+                Apellido:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -55,7 +55,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Nombre:
+                Nombre:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -68,7 +68,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Fecha de Nacimiento:
+                Fecha de nacimiento:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -81,7 +81,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *DNI:
+                DNI:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -106,7 +106,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Celular:
+                Celular:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -119,7 +119,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Email:
+                Email:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -132,7 +132,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                Red Social:
+                Red social:
               </label>
               <input
                 placeholder="Ingrese algun red social"
@@ -144,7 +144,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Provincia:
+                Provincia:<span className="marcas">*</span> 
               </label>
               <select name="pets" id="pet-select" className="form-input " required>
                 <option value="">Seleccione una Provincia</option>
@@ -159,11 +159,11 @@ const Formcliente = ({ setMenu }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Codigo Postal:
+                Localidad:<span className="marcas">*</span> 
               </label>
               <input
                 required
-                placeholder="Ingrese el codigo postal"
+                placeholder="Ingrese la localidad"
                 className="form-input"
                 name="postal"
                 id="postal"
@@ -172,11 +172,11 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Dirección:
+                Dirección:<span className="marcas">*</span> 
               </label>
               <input
                 required
-                placeholder="Ingrese el codigo postal"
+                placeholder="Ingrese la dirección"
                 className="form-input"
                 name="direccion"
                 id="direccion"
@@ -185,24 +185,25 @@ const Formcliente = ({ setMenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Altura:
+                Altura:<span className="marcas">*</span> 
               </label>
               <input
                 required
-                placeholder="Ingrese el codigo postal"
+                placeholder="Ingrese la altura"
                 className="form-input"
                 name="altura"
                 id="altura"
                 type="number"
               />
             </div>
+            
             <div className="form-group">
               <label className="form-label" htmlFor="email">
                 N° Departamento:
               </label>
               <input
                 
-                placeholder="Ingrese el codigo postal"
+                placeholder="Ingrese el numero de departamento"
                 className="form-input"
                 name="departamento"
                 id="departamento"
@@ -215,7 +216,7 @@ const Formcliente = ({ setMenu }) => {
               </label>
               <input
                 
-                placeholder="Ingrese el codigo postal"
+                placeholder="Ingrese el piso"
                 className="form-input"
                 name="piso"
                 id="piso"
@@ -224,7 +225,7 @@ const Formcliente = ({ setMenu }) => {
             </div>
 
             <button className="form-button" type="submit">
-              GUARDAR
+              Guardar
             </button>
           </form>
 

@@ -9,15 +9,16 @@ const Tablecompra = ({setMenucompras}) => {
           icon: 'info',
           html:
             '<p align="left"><b>N° de Factura: </b>00354 </br></br> ' +
-            '<b>Fecha de Compra: </b>, 25-05-23 </br></br>' +
-            '<b>Nombre Comercial: </b>, Proveedor 1 </br></br>' +
-            '<b>Estado: </b>, RECIBIDO </br></br>' +
-            '<b>Archivo: </b>, Factura1.pdf ' +
+            '<b>Fecha de Compra: </b> 25-05-23 </br></br>' +
+            '<b>Nombre Comercial: </b> Proveedor 1 </br></br>' +
+            '<b>Estado: </b> RECIBIDO </br></br>' +
+            '<b>Archivo: </b> Factura1.pdf ' +
             '<button  background-color: "#ff5f59">Descargar</button></br></br> '
             ,
           showCloseButton: true,
           showCancelButton: true,
           focusConfirm: false,
+          confirmButtonColor: "#ff6f69",
           confirmButtonText:
             'Genial!',
           confirmButtonAriaLabel: 'Thumbs up, great!',
@@ -32,8 +33,8 @@ const Tablecompra = ({setMenucompras}) => {
         title: '¿Esta seguro de Eliminar la Compra?',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: "#ff6f69",
+        cancelButtonColor:" #6e7881 ",
         confirmButtonText: '¡Sí, bórralo!'
       }).then((result) => {
         if (result.isConfirmed) {

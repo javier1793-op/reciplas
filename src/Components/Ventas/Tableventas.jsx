@@ -4,14 +4,14 @@ import Swal from 'sweetalert2'
 const Tableventas = () => {
     const Modalinfo=()=>{
         Swal.fire({
-          title: '<strong>Detalle del Pedido <u>#</u></strong>',
+          title: '<strong>Detalle de la venta <u>#</u></strong>',
           icon: 'info',
           html:
-            '<p align="left"><b>N° de Factura: </b>, 0032 </br></br> ' +
-            '<b>N° de Orden: </b>, 0035 </br></br> ' +
+            '<p align="left"><b>N° de Factura: </b> 0032 </br></br> ' +
+            '<b>N° de Orden: </b> 0035 </br></br> ' +
             '<b>Cliente: </b>, Aldo </br></br>' +
-            '<b>Fecha de Pedido: </b>, 01-08-23 </br></br>' +
-            '<b>Fecha de entrega: </b>, 22-08-23 </br></br>' +
+            '<b>Fecha de Pedido: </b> 01-08-23 </br></br>' +
+            '<b>Fecha de entrega: </b> 22-08-23 </br></br>' +
             '<b>Detalle:</p></br></br> </b> <b>Nombre: </b>producto 1 &nbsp  <b>Cantidad: </b> 24  &nbsp<b>Monto: </b>  $2000</br></br> ' +
             ' <b>Nombre: </b>producto 2 &nbsp  <b>Cantidad: </b> 14  &nbsp<b>Monto: </b>  $5000</br></br> '+ 
             '<b>Nombre: </b>producto 3 &nbsp  <b>Cantidad: </b> 4  &nbsp<b>Monto: </b>  $7000</br></br> ' +
@@ -21,6 +21,7 @@ const Tableventas = () => {
           showCloseButton: true,
           showCancelButton: true,
           focusConfirm: false,
+          confirmButtonColor: "#ff6f69",
           confirmButtonText:
             'Genial!',
           confirmButtonAriaLabel: 'Thumbs up, great!',

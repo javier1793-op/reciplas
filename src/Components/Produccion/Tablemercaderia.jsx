@@ -7,15 +7,16 @@ const Tablemercaderia = ({setMenuproduccion}) => {
       title: "<strong>Detalle del Insumo <u>#</u></strong>",
       icon: "info",
       html:
-        '<p align="left"><b>N° de Factura: </b>, 0035 </br></br> ' +
-        "<b>Insumo: </b>, Insumo 1 </br></br>" +
-        "<b>Fecha de Compra: </b>, 01-08-23 </br></br>" +
-        "<b>Peso: </b>, 10kg </br></br>" +
-        "<b>Cantidad: </b>, 5 </br></br>" +
-        "<b>Precio Unitario: </b>, $500 </br></br>" +
-        "<b>Proveedor: </b>, Proveedor 1 </br></br></p>" ,
+        '<p align="left"><b>N° de Factura: </b> 0035 </br></br> ' +
+        "<b>Insumo: </b> Insumo 1 </br></br>" +
+        "<b>Fecha de Compra: </b> 01-08-23 </br></br>" +
+        "<b>Peso: </b> 10kg </br></br>" +
+        "<b>Cantidad: </b> 5 </br></br>" +
+        "<b>Precio Unitario: </b> $500 </br></br>" +
+        "<b>Proveedor: </b> Proveedor 1 </br></br></p>" ,
       showCloseButton: true,
       showCancelButton: true,
+      confirmButtonColor: "#ff6f69",
       focusConfirm: false,
       confirmButtonText: "Genial!",
       confirmButtonAriaLabel: "Thumbs up, great!",
@@ -29,8 +30,8 @@ const Tablemercaderia = ({setMenuproduccion}) => {
       title: "¿Esta seguro de eliminar este registro de compra de insumo?",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
+      confirmButtonColor: "#ff6f69",
+      cancelButtonColor:" #6e7881 ",
       confirmButtonText: "¡Sí, bórralo!",
     }).then((result) => {
       if (result.isConfirmed) {

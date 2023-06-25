@@ -7,17 +7,18 @@ const Tableproducto = ({ setMenuproduccion }) => {
       title: "<strong>Detalle del Producto <u>#</u></strong>",
       icon: "info",
       html:
-        '<p align="left"><b>Codigo Producto: </b>, 0001 </br></br> ' +
-        "<b>Nombre: </b>,Producto 1 </br></br>" +
-        "<b>Fecha de producción: </b>, 01-08-23 </br></br>" +
-        "<b>Estado: </b>, Finalizado </br></br>" +
-        "<b>Detalle: </b>, Detalle del producto 1 </br></br>" +
-        "<b>Limite de produccion: </b>, 500 </br></br>" +
-        "<b>Cantidad en Stock: </b>, 800 </br></br></p>",
+        '<p align="left"><b>Codigo Producto: </b> 0001 </br></br> ' +
+        "<b>Nombre: </b>Producto 1 </br></br>" +
+        "<b>Fecha de producción: </b> 01-08-23 </br></br>" +
+        "<b>Estado: </b> Finalizado </br></br>" +
+        "<b>Detalle: </b> Detalle del producto 1 </br></br>" +
+        "<b>Límite de producción: </b> 500 </br></br>" +
+        "<b>Cantidad en Stock: </b> 800 </br></br></p>",
       showCloseButton: true,
       showCancelButton: true,
       focusConfirm: false,
       confirmButtonText: "Genial!",
+      confirmButtonColor: "#ff6f69",
       confirmButtonAriaLabel: "Thumbs up, great!",
       cancelButtonText: "Cancelar",
       cancelButtonAriaLabel: "Thumbs down",
@@ -29,8 +30,9 @@ const Tableproducto = ({ setMenuproduccion }) => {
       title: "¿Esta seguro de Eliminar el Producto?",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
+      cancelButtonText: "Cancelar",
+      confirmButtonColor: "#ff6f69",
+      cancelButtonColor:" #6e7881 ",
       confirmButtonText: "¡Sí, bórralo!",
     }).then((result) => {
       if (result.isConfirmed) {

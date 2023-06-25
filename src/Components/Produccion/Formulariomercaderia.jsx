@@ -44,7 +44,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
             {" "}
             <FiBook /> Formularo de Registro de Compras
           </h4>
-          <button className="addClient" onClick={() => handleAdd("stock")}>
+          <button className="form-button" onClick={() => handleAdd("stock")}>
             Volver a Registro
           </button>
         </div>
@@ -53,18 +53,18 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
           <form className="colorful-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="form-label" htmlFor="name">
-                *N° de Factura:
+                N° de factura:<span className="marcas">*</span>
               </label>
               <input
                 required
-                placeholder="Ingrese el numero de la factura"
+                placeholder="Ingrese el número de la factura"
                 className="form-input"
                 type="number"
               />
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Fecha de compra:
+                Fecha de compra:<span className="marcas">*</span>
               </label>
               <input
                 required
@@ -77,7 +77,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
             </div>
             <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Producto:
+                    Producto:<span className="marcas">*</span>
                   </label>
                   <select name="pets" id="pet-select" className="form-input " required>
                     <option value="">Seleccione el producto</option>
@@ -89,6 +89,9 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
                   </select>
                 </div>
                 <div className="form-group">
+                <label className="form-label tapar" htmlFor="name">
+                  te veo
+                </label>
                 <button className="form-button"
                   onClick={handleproducto}
                 >
@@ -97,7 +100,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Peso:
+                Peso:<span className="marcas">*</span>
               </label>
               <input
                 required
@@ -111,7 +114,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
             
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Cantidad:
+                Cantidad:<span className="marcas">*</span>
               </label>
               <input
                 required
@@ -124,7 +127,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Precio Unitario:
+                Precio unitario:<span className="marcas">*</span>
               </label>
               <input
                 required
@@ -140,7 +143,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
                 </div>
             <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Proovedor:
+                    Proovedor:<span className="marcas">*</span>
                   </label>
                   <select name="pets" id="pet-select" className="form-input " required>
                     <option value="">Seleccione el proveedor</option>
@@ -152,6 +155,9 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
                   </select>
                 </div>
                 <div className="form-group">
+                <label className="form-label tapar" htmlFor="name">
+                  te veo
+                </label>
                 <button className="form-button"
                 onClick={handleproveedor}
                 >
@@ -159,7 +165,7 @@ const Formulariomercaderia = ({setMenuproduccion}) => {
             </button>
             </div>
             <button className="form-button" type="submit">
-              GUARDAR
+              Guardar
             </button>
           </form>
 

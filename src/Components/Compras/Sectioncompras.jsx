@@ -16,7 +16,7 @@ const Sectioncompras = ({setMenucompras}) => {
       <div className="headTable">
         <h4> <FiCheckSquare/> Registro Compras</h4>
         <button 
-        className='addClient'
+        className='form-button'
         onClick={()=>handleAdd('addCompra')}
         >Registrar Compra</button>
       </div>

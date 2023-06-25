@@ -34,7 +34,7 @@ const Formcompra = ({setMenucompras}) => {
             {" "}
             <FiBook /> Formularo de Registro de Compras
           </h4>
-          <button className="addClient" onClick={() => handleAdd("registrocompra")}>
+          <button className="form-button" onClick={() => handleAdd("registrocompra")}>
             Volver a Registro
           </button>
         </div>
@@ -43,18 +43,18 @@ const Formcompra = ({setMenucompras}) => {
           <form className="colorful-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="form-label" htmlFor="name">
-                *N° de Factura:
+                N° de Factura:<span className="marcas">*</span> 
               </label>
               <input
                 required
-                placeholder="Ingrese el numero de la factura"
+                placeholder="Ingrese el número de la factura"
                 className="form-input"
                 type="number"
               />
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Fecha de compra:
+                Fecha de compra:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -67,7 +67,7 @@ const Formcompra = ({setMenucompras}) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Nombre Comercial:
+                Nombre comercial:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -80,7 +80,7 @@ const Formcompra = ({setMenucompras}) => {
             </div>
             <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Estado:
+                    Estado:<span className="marcas">*</span> 
                   </label>
                   <select name="pets" id="pet-select" className="form-input " required>
                     <option value="">Seleccione un Estado</option>
@@ -90,7 +90,7 @@ const Formcompra = ({setMenucompras}) => {
                 </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Factura del proveedor(.pdf):
+                Factura del proveedor(.pdf):<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -105,7 +105,7 @@ const Formcompra = ({setMenucompras}) => {
                  
                 </div>
             <button className="form-button" type="submit">
-              GUARDAR
+              Guardar
             </button>
           </form>
 

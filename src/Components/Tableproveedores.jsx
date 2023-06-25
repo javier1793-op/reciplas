@@ -8,23 +8,24 @@ const Tableproveedores = ({setMenu}) => {
       title: '<strong>Detalle del Proveedor <u>#</u></strong>',
       icon: 'info',
       html:
-        '<p align="left"><b>Nombre Comercial: </b>, Empresa 1 </br></br> ' +
-        '<b>CUIT: </b>, 234356432 </br></br>' +
-        '<b>Razón social: </b>, razon empresa 1 </br></br>' +
-        '<b>Pais: </b>, Argentina </br></br>' +
-        '<b>Provee: </b>,bienes - servicios</br></br> ' +
-        '<b>Tipo empresa: </b>, Grande</br></br> '+ 
-        '<b>Rama: </b>, fabricante - distribuidor</br></br> ' +
-        '<b>Domicilio legal: </b>, AV siempre viva 736</br></br> ' +
-        '<b>Telefono de domicilio: </b>, 3435435676</br></br> ' +
-        '<b>Nombre de contacto: </b>, Encargado 1</br></br> ' +
-        '<b>Puesto: </b>, Jefe de pedidos</br></br> ' +
-        '<b>Email de contacto: </b>, contacto@gmail.com</br></br> ' +
-        '<b>Email de empresa: </b>, empresa@gmail.com</br></br></p> ' 
+        '<p align="left"><b>Nombre Comercial: </b> Empresa 1 </br></br> ' +
+        '<b>CUIT: </b> 234356432 </br></br>' +
+        '<b>Razón social: </b> razon empresa 1 </br></br>' +
+        '<b>Pais: </b> Argentina </br></br>' +
+        '<b>Provee: </b>bienes - servicios</br></br> ' +
+        '<b>Tipo empresa: </b> Grande</br></br> '+ 
+        '<b>Rama: </b> fabricante - distribuidor</br></br> ' +
+        '<b>Domicilio legal: </b> AV siempre viva 736</br></br> ' +
+        '<b>Telefono de domicilio: </b> 3435435676</br></br> ' +
+        '<b>Nombre de contacto: </b> Encargado 1</br></br> ' +
+        '<b>Puesto: </b> Jefe de pedidos</br></br> ' +
+        '<b>Email de contacto: </b> contacto@gmail.com</br></br> ' +
+        '<b>Email de empresa: </b> empresa@gmail.com</br></br></p> ' 
         ,
       showCloseButton: true,
       showCancelButton: true,
       focusConfirm: false,
+      confirmButtonColor: "#ff6f69",
       confirmButtonText:
         'Genial!',
       confirmButtonAriaLabel: 'Thumbs up, great!',
@@ -39,8 +40,8 @@ const Tableproveedores = ({setMenu}) => {
     title: '¿Esta seguro de Eliminar el Proveedor?',
     icon: 'warning',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
+    confirmButtonColor: "#ff6f69",
+    cancelButtonColor:" #6e7881 ",
     confirmButtonText: '¡Sí, bórralo!'
   }).then((result) => {
     if (result.isConfirmed) {

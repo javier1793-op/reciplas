@@ -54,24 +54,24 @@ const Factura = () => {
               <tr>
                 <td>Producto 1</td>
                 <td>5</td>
-                <td>800</td>
+                <td>800.00</td>
                 <td>0.00</td>
-                <td>4500</td>
+                <td>4.500</td>
               </tr>
               <tr>
                 <td>Producto 1</td>
                 <td>5</td>
-                <td>800</td>
+                <td>800.00</td>
                 <td>0.00</td>
-                <td>4500</td>
+                <td>4.500</td>
               </tr>
              
               <tr>
                 <td>Producto 1</td>
                 <td>5</td>
-                <td>800</td>
+                <td>800.00</td>
                 <td>0.00</td>
-                <td>4500</td>
+                <td>4.500</td>
               </tr>
               <tr>
                 <td></td>
@@ -108,7 +108,7 @@ const Factura = () => {
         <button className="form-button" 
         onClick={handlePrint}
         >
-              IMPRIMIR
+              Imprimir
             </button>
         <button className="form-button" 
         onClick={handlevolver}
@@ -118,7 +118,7 @@ const Factura = () => {
                <button className="form-button" >
             <a href="mailto:reciplas@gmail.com" className="mailbtn">
 
-              Enviar a Email
+              Enviar a email
             </a>
             </button>
        

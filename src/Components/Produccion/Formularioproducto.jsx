@@ -34,7 +34,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
                 {" "}
                 <FiBook /> Formularo de Registro de Producción
               </h4>
-              <button className="addClient" onClick={() => handleAdd("stock")}>
+              <button className="form-button" onClick={() => handleAdd("stock")}>
                 Volver a Registro
               </button>
             </div>
@@ -56,11 +56,11 @@ const Formularioproducto = ({setMenuproduccion}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Nombre:
+                    Nombre:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
-                    placeholder=""
+                    placeholder="Ingrese el nombre del producto"
                     className="form-input"
                     name="nombre"
                     id="nombre"
@@ -71,7 +71,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
                     
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Cantidad de Producción:
+                    Cantidad de producción:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -85,7 +85,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
                 
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Detalle:
+                    Detalle:<span className="marcas">*</span> 
                   </label>
                   <textarea
                     required
@@ -98,7 +98,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Fecha de finalización:
+                    Fecha de finalización:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -112,7 +112,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
              
                 <div className="form-group">
                       <label className="form-label" htmlFor="email">
-                        *Estado de Elavoración:
+                        Estado de elaboración:<span className="marcas">*</span> 
                       </label>
                       <select name="pets" id="pet-select" className="form-input " required>
                         <option value="">Indique un estado</option>
@@ -123,7 +123,7 @@ const Formularioproducto = ({setMenuproduccion}) => {
                     </div>
                    
                 <button className="form-button" type="submit">
-                  GUARDAR
+                  Guardar
                 </button>
               </form>
     

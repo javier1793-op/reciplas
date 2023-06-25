@@ -18,6 +18,10 @@
     margin-bottom: 5px;
     color: #333;
   }
+
+  .tapar{
+    color: #fff;
+  }
   
   .form-input {
     width: 100%;
@@ -40,6 +44,11 @@ input[type=number] { -moz-appearance:textfield; }
   }
   .select{
     width: 40%;
+  }
+  .marcas{
+    color: #ff6f69;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
   
   .form-button {

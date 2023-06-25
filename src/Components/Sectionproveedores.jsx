@@ -14,7 +14,7 @@ const Sectionproveedores = ({setMenu}) => {
     <div className="viewTable">
       <div className="headTable">
         <h4> <FiCheckSquare/> Registro Proveedores</h4>
-        <button className='addClient'
+        <button className='form-button'
         onClick={()=>handleAdd('addProveedor')}
         >Agregar Proveedor</button>
       </div>

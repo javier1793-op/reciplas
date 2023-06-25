@@ -18,11 +18,11 @@ const Registropedidos = ({setSubmenu}) => {
             <h4> <FiCheckSquare/> Registro Pedidos</h4>
             
                 <button 
-            className='addClient'
+            className='form-button'
             onClick={handleCliente}
             >Agregar Cliente</button>
             <button 
-            className='addClient'
+            className='form-button'
             onClick={()=>setSubmenu('addpedido')}
             >Agregar Pedido</button>
             </div>

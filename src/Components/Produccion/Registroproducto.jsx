@@ -10,7 +10,7 @@ const Registroproducto = ({setMenuproduccion}) => {
       <div className="headTable">
         <h4> <FiCheckSquare/> Registro Producción</h4>
         <button 
-        className='addClient'
+        className='form-button'
         onClick={()=>setMenuproduccion('addProducto')}
         >Registrar Producto</button>
         </div>

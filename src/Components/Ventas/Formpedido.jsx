@@ -34,7 +34,7 @@ const Formpedido = ({ setSubmenu }) => {
             {" "}
             <FiBook /> Formularo de Pedidos
           </h4>
-          <button className="addClient" onClick={() => handleAdd("pedidos")}>
+          <button className="form-button" onClick={() => handleAdd("pedidos")}>
             Volver a Registro
           </button>
         </div>
@@ -42,19 +42,19 @@ const Formpedido = ({ setSubmenu }) => {
         <div className="bodyTable">
           <form className="colorful-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label className="form-label" htmlFor="name">
-                *N° de Orden:
+              <label className="form-label " htmlFor="name">
+                N° de orden:<span className="marcas">*</span> 
               </label>
               <input
                 required
-                placeholder="Ingrese el numero de orden"
+                placeholder="Ingrese el número de orden"
                 className="form-input"
                 type="text"
               />
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Fecha de pedido:
+                Fecha de pedido:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -67,7 +67,7 @@ const Formpedido = ({ setSubmenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *Fecha de Entrega:
+                Fecha de entrega:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -80,7 +80,7 @@ const Formpedido = ({ setSubmenu }) => {
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">
-                *DNI del cliente:
+                DNI del cliente:<span className="marcas">*</span> 
               </label>
               <input
                 required
@@ -96,7 +96,7 @@ const Formpedido = ({ setSubmenu }) => {
                 <tr>
                   <td>
                     <label className="form-label" htmlFor="email">
-                      *Producto:
+                      Producto:<span className="marcas">*</span> 
                     </label>
                     <select
                       name="pets"
@@ -114,8 +114,8 @@ const Formpedido = ({ setSubmenu }) => {
                     </select>
                   </td>
                   <td>
-                    <label className="form-label" htmlFor="email">
-                      *Cantidad:
+                    <label className="form-label labelsmall" htmlFor="email">
+                      Cantidad:<span className="marcas">*</span> 
                     </label>
                     <input
                       required
@@ -128,7 +128,7 @@ const Formpedido = ({ setSubmenu }) => {
                   </td>
                   <td>
                     <label className="form-label" htmlFor="email">
-                      *Precio:
+                      Precio:<span className="marcas">*</span> 
                     </label>
                     <input
                       required
@@ -162,7 +162,7 @@ const Formpedido = ({ setSubmenu }) => {
               </table>
             </div>
             <button className="form-button" type="submit">
-              GUARDAR
+              Guardar
             </button>
           </form>
 

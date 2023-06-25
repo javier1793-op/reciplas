@@ -81,7 +81,10 @@ const Estadisticas = () => {
                 </select>
               </div>
               <div className="form-group">
-                <button className="form-button">GENERAR</button>
+              <label className="form-label tapar" htmlFor="name">
+                  te veo
+                </label>
+                <button className="form-button">Generar</button>
               </div>
               <div className="form-group">
                 <span>

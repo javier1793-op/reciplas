@@ -10,17 +10,18 @@ const Table = ({setMenu}) => {
       title: '<strong>Detalle Cliente <u>#</u></strong>',
       icon: 'info',
       html:
-        '<p align="left"><b>Nombre y Apellido: </b>, Ruiz Diaz Javier A. </br></br> ' +
-        '<b>Fecha de Nacimiento: </b>, 11 Marzo 1993 </br></br>' +
-        '<b>DNI: </b>, 36957447 </br></br>' +
-        '<b>Celular: </b>, 3704264610 </br></br>' +
-        '<b>Email: </b>, javier17utn@gmail.com</br></br> ' +
-        '<b>Provincia: </b>, Chaco 3500</br></br> '+ 
-        '<b>Dirección: </b>, Juan b Justo 760</br></br></p> ' 
+        '<p align="left"><b>Nombre y Apellido: </b> Ruiz Diaz Javier A. </br></br> ' +
+        '<b>Fecha de Nacimiento: </b> 11 Marzo 1993 </br></br>' +
+        '<b>DNI: </b> 36957447 </br></br>' +
+        '<b>Celular: </b> 3704264610 </br></br>' +
+        '<b>Email: </b> javier17utn@gmail.com</br></br> ' +
+        '<b>Provincia: </b> Chaco 3500</br></br> '+ 
+        '<b>Dirección: </b> Juan b Justo 760</br></br></p> ' 
         ,
       showCloseButton: true,
       showCancelButton: true,
       focusConfirm: false,
+      confirmButtonColor: "#ff6f69",
       confirmButtonText:
         'Genial!',
       confirmButtonAriaLabel: 'Thumbs up, great!',
@@ -35,8 +36,8 @@ const Table = ({setMenu}) => {
     title: '¿Esta seguro de Eliminar Clientes?',
     icon: 'warning',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
+    confirmButtonColor: "#ff6f69",
+    cancelButtonColor:" #6e7881 ",
     confirmButtonText: '¡Sí, bórralo!'
   }).then((result) => {
     if (result.isConfirmed) {

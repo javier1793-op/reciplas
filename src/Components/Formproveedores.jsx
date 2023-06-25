@@ -36,7 +36,7 @@ const Formproveedores = ({setMenu}) => {
                 {" "}
                 <FiTruck /> Formularo de Provedores
               </h4>
-              <button className="addClient" onClick={() => handleAdd("proveedores")}>
+              <button className="form-button" onClick={() => handleAdd("proveedores")}>
                 Volver a Registro
               </button>
             </div>
@@ -45,7 +45,7 @@ const Formproveedores = ({setMenu}) => {
               <form className="colorful-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="name">
-                    *Nombre Comercial:
+                    Nombre comercial:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -56,7 +56,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *CUIT:
+                    CUIT:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -69,7 +69,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Razón social:
+                    Razón social:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -82,7 +82,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Pais de origen:
+                    Pais de origen:<span className="marcas">*</span> 
                   </label>
                   <select name="pets" id="pet-select" className="form-input " required>
                     <option value="">Seleccione un Pais</option>
@@ -96,7 +96,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group check">
                   <label className="form-label" htmlFor="email">
-                    *Provee:
+                    Provee:<span className="marcas">*</span> 
                   </label>
                   <label><input type="checkbox" id="cbox1" value="first_checkbox"/> Bienes</label>
                   <label><input type="checkbox" id="cbox1" value="first_checkbox"/> Servicios</label>
@@ -104,7 +104,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group check">
                   <label className="form-label" htmlFor="email">
-                    *Tipo Empresa:
+                    Tipo Empresa:<span className="marcas">*</span> 
                   </label>
                   <label><input type="checkbox" id="cbox1" value="first_checkbox"/> Grande</label>
                   <label><input type="checkbox" id="cbox1" value="first_checkbox"/> Mediana</label>
@@ -112,7 +112,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group check">
                   <label className="form-label" htmlFor="email">
-                    *Rama:
+                    Rama:<span className="marcas">*</span> 
                   </label>
                   <label><input type="checkbox" id="cbox1" value="first_checkbox"/> Fabricante</label>
                   <label><input type="checkbox" id="cbox1" value="first_checkbox"/> Distribuidor</label>
@@ -126,7 +126,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Domicilio legal:
+                    Domicilio legal:<span className="marcas">*</span> 
                   </label>
                   <input
                     placeholder="Ingrese dirección domicilio"
@@ -138,7 +138,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Telefono Domicilio Legal:
+                    Telefono domicilio legal:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -151,7 +151,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    Domicilio Comercial:
+                    Domicilio comercial:
                   </label>
                   <input
                     placeholder="Ingrese dirección del domicilio"
@@ -163,7 +163,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    Telefono Domicilio Comercial:
+                    Telefono domicilio comercial:
                   </label>
                   <input
                     placeholder="Ingrese el telefono del domicilio"
@@ -176,7 +176,7 @@ const Formproveedores = ({setMenu}) => {
                 
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Nombre de contacto:
+                    Nombre de contacto:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -189,7 +189,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Puesto del contacto:
+                    Puesto del contacto:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -202,7 +202,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">
-                    *Mail de Contacto:
+                    Mail de contacto:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -215,7 +215,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
                 <div className="form-group">
                 <label className="form-label" htmlFor="email">
-                    *Mail Empresarial:
+                    Mail empresarial:<span className="marcas">*</span> 
                   </label>
                   <input
                     required
@@ -228,7 +228,7 @@ const Formproveedores = ({setMenu}) => {
                 </div>
     
                 <button className="form-button" type="submit">
-                  GUARDAR
+                  Guardar
                 </button>
               </form>
     
